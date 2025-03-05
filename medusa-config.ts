@@ -36,6 +36,7 @@ module.exports = defineConfig({
       resolve: "@medusajs/medusa/cache-redis",
       options: {
         redisUrl: process.env.REDIS_URL,
+        ttl: 30
       },
     },
     [Modules.EVENT_BUS]: {
